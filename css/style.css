@@ -1,0 +1,18 @@
+body {
+  background: rgba(78, 51, 51, 0.8); /* fallback for old browsers */
+  background-image: linear-gradient(
+        to right bottom,
+        rgba(243, 202, 32, 0.7),
+        rgba(243, 202, 32, 0.7)),
+        url(../img/book2.jpg); 
+        /* loading image and applying brown gradient on it */
+    background-size: cover; 
+    /* will cover 100% of the viewport width */
+    background-position: top; 
+    /* image will stick to the top of the viewport */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;      
+}

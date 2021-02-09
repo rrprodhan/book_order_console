@@ -1,0 +1,59 @@
+nav form {
+    margin-left: auto;
+}
+
+#booklist {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgba(0, 0, 0, 0.9);
+    color: #fff;
+  }
+  
+  #booklist td, #booklist th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+
+  #booklist tr:nth-child(even){background-color:#28a745;}
+  #booklist tr:hover {background-color: #28a745;}
+  
+  #booklist th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color:#343a40;
+    color: white;
+  }
+
+.button {
+    background-color: #2e0a0a;
+    color: #e6d7d7;
+}
+
+ul {
+  margin-left: 83%;
+}
+
+.modal {
+  margin-top: 3%;
+}
+
+.form {
+  margin-top: -20%;
+}
+
+#form-title {
+  font-size: 20px;
+  margin-top: -15px;
+}
+
+#alert {
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}

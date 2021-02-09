@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Online Book Ordering System</title>
+
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/home.css">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="home.html">Online Book Ordering System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" id="name" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="button" id="button">Search</button>
+            </form>
+
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" id="username" href="#"><span class="sr-only">(current)</span></a>
+                </li>
+                <li>
+                    <a href="logout.html"><input type="button" class="btn btn-dark button" id="logout" name="submit" value="Logout"/></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="alert"></div>
+
+    <table id="booklist">
+        <tr>
+            <th>Book Name</th>
+            <th>Writer</th>
+            <th>Place Order</th>
+        </tr>
+    </table>
+
+    <!-- Modal for placing order -->
+    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button> -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Order Form</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <form>
+            <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Name:</label>
+                <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="form-group">
+                <label for="recipient-address" class="col-form-label">Address:</label>
+                <input type="text" class="form-control" id="recipient-address">
+            </div>
+            <div class="form-group">
+                <label for="recipient-email" class="col-form-label">Email:</label>
+                <input type="text" class="form-control" id="recipient-email">
+            </div>
+            <div class="form-group">
+                <label for="recipient-mobile" class="col-form-label">Mobile:</label>
+                <input type="text" class="form-control" id="recipient-mobile">
+            </div>
+            <div class="form-group">
+                <label for="recipient-book-name" class="col-form-label">Book Name:</label>
+                <input type="text" class="form-control" id="recipient-book-name" readonly>
+            </div>
+            <div class="form-group">
+                <label for="recipient-writer" class="col-form-label">Writer:</label>
+                <input type="text" class="form-control" id="recipient-writer" readonly>
+            </div>
+            <div class="form-group">
+                <label for="recipient-quantity" class="col-form-label">Quantity:</label>
+                <select id="recipient-quantity" name="recipient-quantity"></select>
+            </div>
+            <div class="form-group">
+                <label for="recipient-format" class="col-form-label">Format:</label>
+                <select id="recipient-format" name="recipient-format">
+                    <option value="hardCopy">Hard Copy</option>
+                    <option value="pdf">PDF</option>
+                    <option value="djvu">DJVU</option>
+                </select>
+            </div>
+            <div id="status"></div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-outline-success" id="order">Place Order</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script type="module" src="../js/home.js"></script>
+</body>
+</html>

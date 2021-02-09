@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Online Book Ordering System</title>
+
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/login-register.css">
+        <link rel="stylesheet" href="../css/order.css">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="home.html">Online Book Ordering System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" id="username" href="#"><span class="sr-only">(current)</span></a>
+                </li>
+                <li>
+                    <a href="logout.html"><input type="button" class="btn btn-dark button" id="logout" name="submit" value="Logout"/></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="alert"></div>
+
+    <div class="login-page">
+        <div class="form">
+          <form class="login-form">
+            <p id="form-title">Order Form</p>
+            <input type="text" class="form-control" id="recipient-name" placeholder="Name">
+            <input type="text" class="form-control" id="recipient-address" placeholder="Address">
+            <input type="text" class="form-control" id="recipient-email" placeholder="Email">
+            <input type="text" class="form-control" id="recipient-mobile" placeholder="Mobile">
+            <input type="text" class="form-control" id="recipient-book-name" readonly placeholder="Book Name">
+            <input type="text" class="form-control" id="recipient-writer" readonly placeholder="Writer">
+            <label for="recipient-quantity" class="col-form-label">Quantity:</label>
+            <select id="recipient-quantity" class="form-control" name="recipient-quantity"></select>
+            <label for="recipient-format" class="col-form-label">Format:</label>
+            <select id="recipient-format" class="form-control" name="recipient-format">
+                <option value="hardCopy">Hard Copy</option>
+                <option value="pdf">PDF</option>
+                <option value="djvu">DJVU</option>
+            </select><br>
+            <label for="recipient-price" class="col-form-label">Price (TK):</label>
+            <input type="text" class="form-control" id="recipient-price" readonly placeholder="Price">
+
+            <input type="button" class="btn btn-dark button" id="order" name="submit" value="Purchase"/>
+            <div id="status"></div>
+          </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script type="module" src="../js/order.js"></script>
+</body>
+</html>

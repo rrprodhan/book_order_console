@@ -1,5 +1,5 @@
 if(!sessionStorage.getItem("name")) {
-    window.location.href = "../login.html";
+    window.location.href = "../index.html";
 }
 
 const username = document.getElementById("username");
